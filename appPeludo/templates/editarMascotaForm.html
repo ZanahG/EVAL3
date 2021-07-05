@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block titulo %}
+    Agregar Mascota
+{% endblock titulo %}
+
+{% block contenido %}
+    <h1>Modificar Datos de Mascota</h1>
+    
+    <form action="" method="POST" id="formulario">
+        {% csrf_token %}
+
+        <div class="form-group">
+            {{ form.as_table }}
+        </div>
+
+        <input type = "submit" class="btn btn-danger" value = "Editar Mascota" id="guardar" />
+        <input type = "reset" class="btn btn-primary" value = "Limpiar Campos" id="limpiar" />
+        
+    </form>
+
+    <div class="alert alert-success" role="alert">
+        {{mensaje}}
+
+    </div>
+
+{% endblock  %}

@@ -1,0 +1,122 @@
+{% extends 'layout.html' %}
+
+{% block titulo %}
+    Ayuda a un Peludo Consulta Clima
+{% endblock titulo %}
+
+{% block contenido %}
+    <h1>¿Cómo está el Clima?</h1>
+    <h3>Obtención de Clima con una API</h3>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ingrese Ciudad">
+        </div>
+        <button id="consultaClima" type="button" class="btn btn-primary margenTop10" onclick="cargar_clima()">Consultar
+            Clima</button>
+    </form>
+
+    <div id="datosDelClima">
+        <p id="datosCiudad">La temperatura para <span id="ubicacion"></span> es : <span
+                id="temperatura"></span>º</p>
+        <p id="datosCiudad">Humedad Relativa <span id="humedad"></span> % Porciento</p>
+        <p id="datosCiudad">Velocidad del Viento <span id="velocidadviento"></span> KM/H</p>
+
+    </div>
+
+
+{% endblock  %}
+
+
+
+{% comment %} 
+{% load static %}
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ayuda a un Peludo Clima</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/misestilos.css' %}">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="{% static 'img/tiger.jpg' %}" class="logo" />
+            </div>
+        </div>
+        <div class="row fondoNaranja ">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link letrasMenu" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letrasMenu" href="#!">Perros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letrasMenu" href="#!">Gatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letrasMenu" href="#!">Contacto</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="row margenTop10 centrar">
+            <h1>¿Cómo está el Clima?</h1>
+            <h3>Obtención de Clima con una API</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ingrese Ciudad">
+                </div>
+                <button id="consultaClima" type="button" class="btn btn-primary margenTop10" onclick="cargar_clima()">Consultar
+                    Clima</button>
+            </form>
+
+            <div id="datosDelClima">
+                <p id="datosCiudad">La temperatura para <span id="ubicacion"></span> es : <span
+                        id="temperatura"></span>º</p>
+                <p id="datosCiudad">Humedad Relativa <span id="humedad"></span> % Porciento</p>
+                <p id="datosCiudad">Velocidad del Viento <span id="velocidadviento"></span> KM/H</p>
+
+            </div>
+            
+        </div>
+
+        <div class="row centrar margenTop10">
+            <!--Seccion contacto-->
+            <h1>CONTACTOS</h1>
+            <h3>correo@ayudaunpeludo.cl</h3>
+            <h3>+5699555644</h3>
+            <img src="{% static 'img/rrss.png' %}" class="imgrrss" />
+
+        </div>
+        <div class="row centrar margenTop10">
+            <!--Seccion Auspiciadores-->
+            <h1>AUSPICIADORES</h1>
+            <img src="{% static 'img/auspiciadores.png' %}" class="imgauspiciador" />
+
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!--Este script tiene solo javascript-->
+    <script src="{% static 'js/miscript.js' %}"></script>
+
+    <!--Este script contiene JQuery-->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/scriptDelClima.js' %}"></script>
+
+
+</body>
+
+</html> {% endcomment %}

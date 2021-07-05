@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block titulo %}
+    REGISTRO
+{% endblock titulo %}
+
+{% block contenido %}
+    <div class="row margenTop10">
+        <h1>FORMULARIO SOLICITUD DE ADOPCIÓN</h1>
+    </div>
+
+    <div class="row margenTop10">
+        <form name="formulario" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required name="nombre" placeholder="Ingrese Nombre">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" class="form-control" id="edad" required min="18" max="70" name="edad" placeholder="Ingrese Edad">
+            </div>
+            <div class="form-group">
+                <label for="email">eMail</label>
+                <input type="email" class="form-control" id="correo" required name="correo" placeholder="Ingresa tu eMail">
+            </div>
+            <div class="form-group">
+                <label for="dir">Dirección</label>
+                <input type="text" class="form-control" id="dir" required name="dir" placeholder="Ingrese Direccion">
+            </div>
+            <div class="form-group">
+                <label for="casilla">Acepta condiciones</label>
+                <input type="checkbox" class="form-check" id="casilla" required name="casilla" >
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" onclick="validar_envio()" >Enviar</button>
+            </div>
+        </form>
+
+    </div>
+
+{% endblock  %}
+
+

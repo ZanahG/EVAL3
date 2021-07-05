@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block titulo %}
+    Lista de Mascotas
+{% endblock titulo %}
+
+{% block contenido %}
+    <div class="row">
+        <h1>Lista de Mascotas</h1>
+    </div>
+
+    <div class="row">
+    
+    <table>
+        <tr><td>ID</td><td>CODIGO</td><td>NOMBRE</td><td>ESPECIE</td><td></td><td></td></tr>
+        {% for mascota in mascotas%}
+            <tr>
+            <td>{{mascota.id}}</td><td>{{mascota.codigo}}</td><td>{{mascota.nombre}}</td><td>{{mascota.especie}}</td>
+            <td><a class="btn btn-primary" href="{% url 'formmascotaMod' mascota.id %}">Modificar</a></td>
+            <td><a class="btn btn-danger" href="{% url 'formmascotaDel' mascota.id %}">Eliminar</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+    <a class="btn btn-primary" href="{% url 'formmascota' %}">Agregar Mascota</a>
+
+    </div>
+{% endblock  %}

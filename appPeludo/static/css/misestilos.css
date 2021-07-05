@@ -1,0 +1,95 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+#fondo{
+    background-color: #ec71bc;
+
+}
+
+.letrasMenu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 10%;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.centrarimg {
+    display: block;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 150px;
+    margin-top: 10%;
+}
+
+@media (min-width: 100px) {
+    img {
+        width: 50px;
+    }
+
+ 
+}
+
+@media (min-width: 900px) {
+    img {
+        width: 150px;
+    }
+ 
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #aa00b5;
+
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: grey;
+}
+
+.imgrrss {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.imgauspiciador {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.margenTop10 {
+    margin-top: 2%;
+}
+
+.colorFondo {
+    background-color: blue;
+}
+
+#datosCiudad{
+    text-align: center;
+}
+

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block titulo %}
+    Lista de Mascotas
+{% endblock titulo %}
+
+{% block contenido %}
+    <div class="row">
+        <h1>Lista de Mascotas</h1>
+    </div>
+
+    <div class="row">
+    
+    <table>
+        <tr><td>NOMBRE</td><td>ESPECIE</td><td></td></tr>
+        {% for mascota in mascotas%}
+            <tr>
+            <td>{{mascota.nombre}}</td><td>{{mascota.especie}}</td>
+            <td><a class="btn btn-primary" href="{% url 'formmascotaDel' mascota.id %}">Adoptar</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    </div>
+{% endblock  %}

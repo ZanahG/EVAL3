@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        {% block titulo %}
+            <!--Titulo de cada página-->
+        {% endblock  %}
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/misestilos.css' %}">    
+    <link type="text/css" rel="stylesheet" href="{% static 'css/navbar.css' %}"> 
+</head>
+
+<body>
+    
+        <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="toggle-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link letrasMenu" href="http://127.0.0.1:8000/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letrasMenu" href="http://127.0.0.1:8000/listamascotasUser">Mascotas en Adopcion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letrasMenu" href="/consultaClima">Clima</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letrasMenu" href="/formulario">Registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link letrasMenu" href="http://127.0.0.1:8000/listamascotas">ADMIN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+      </div>
+    </header>
+    <section>
+    </section>
+
+        <div class="row margenTop10 centrar">
+
+            {% block contenido %}
+                <!--Codigo de cada página-->
+            
+            {% endblock  %}
+          
+        </div>
+
+        <div class="row centrar margenTop10">
+            <!--Seccion contacto-->
+            <h1>CONTACTOS</h1>
+            <h3>correo@ayudaunpeludo.cl</h3>
+            <h3>+5699555644</h3>
+            <a href="https://www.instagram.com/adoptaunpeludo2021/"> <img src="{% static 'img/Instagram.png' %}" class = "imgrrss" alt=""></a>
+        </div>
+    </div>
+
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+
+    <!--Este script tiene solo javascript-->
+    <script src="{% static 'js/miscript.js' %}"></script>
+
+    <!--Este script contiene JQuery-->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/scriptDelClima.js' %}"></script>
+
+
+</body>
+
+</html>

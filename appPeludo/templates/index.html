@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block titulo %}
+    Inicio
+{% endblock titulo %}
+
+{% block contenido %}
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+
+<section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Mascotas que buscan hogar</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Perro1.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="Dog1.html"> <img src="img/push-button.png" alt=""></a>
+                            <p>Drago</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Perro2.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="Dog2.html"> <img src="img/push-button.png" alt=""></a>
+                            <p>Jaime</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Perro3.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="Dog3.html"> <img src="img/push-button.png" alt=""></a>
+                            <p>Kratos</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Gato1.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="Dog4.html"> <img src="img/push-button.png" alt=""></a>
+                            <p>Killua</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Gato2.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="Cat5.html"> <img src="img/push-button.png" alt=""></a>
+                            <p>Neferpitou</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Gato3.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="Cat2.html"> <img src="img/push-button.png" alt=""></a>
+                            <p>Mayichi</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Ave1.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="Cat3.html"> <img src="img/push-button.png" alt=""></a>
+                            <p>Pidgeot</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src= "{% static 'img/Ave2.jpg' %}" alt="">
+                        <div class="hover-galeria">
+                            <a href="listamascotasUser"> <img src= "{% static 'img/adopta.png' %}" alt=""></a>
+                            <p>Alado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock  %}
+
