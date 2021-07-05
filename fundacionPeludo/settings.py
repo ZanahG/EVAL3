@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'appPeludo',
     'rest_framework',
-    'webservice_mascota'
+    'webservice_mascota',
+    'rest_framework.authtoken',
 
 
 ]
