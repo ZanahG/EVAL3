@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'appPeludo',
     'rest_framework',
     'webservice_mascota',
-    'rest_framework.authtoken',
+    'rest_framework.authtoken'
 
 
 ]
