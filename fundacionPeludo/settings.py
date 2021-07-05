@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'webservice_mascota',
     'rest_framework.authtoken'
-
-
 ]
 
 MIDDLEWARE = [
